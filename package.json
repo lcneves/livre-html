@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/lcneves/livre-html/issues"
   },
-  "homepage": "https://github.com/lcneves/livre-html#readme"
+  "homepage": "https://github.com/lcneves/livre-html#readme",
+  "dependencies": {
+    "livre-client": "0.0.1"
+  }
 }
