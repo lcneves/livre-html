@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/lcneves/livre-html#readme",
   "dependencies": {
-    "livre-client": "0.0.1"
+    "livre-client": "latest"
   }
 }
