@@ -1,6 +1,6 @@
 {
   "name": "livre-html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML5 engine for the Livre project.",
   "main": "index.js",
   "scripts": {
