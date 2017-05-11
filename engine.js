@@ -12,4 +12,17 @@ module.exports = function (options) {
   const theme = options.theme;
 
   function makeShell() {
-    
+    var header = theme.makeHeader();
+    appendHTML(header, document.body);
+  }
+
+  return {
+    makeShell: makeShell
+  };
+
+  function appendHTML(html, parentElement) {
+    var template = document.createElement('template');
+    template.innerHTML = html;
+    parentElement.appendChild(template.content);
+  }
+};

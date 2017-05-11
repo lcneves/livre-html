@@ -4,7 +4,8 @@
   "description": "HTML5 engine for the Livre project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,23 @@
   "homepage": "https://github.com/lcneves/livre-html#readme",
   "dependencies": {
     "livre-client": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "mocha": "latest",
+    "babel-preset-env": "latest",
+    "babelify": "latest"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env"
+          ]
+        }
+      ]
+    ]
   }
 }
